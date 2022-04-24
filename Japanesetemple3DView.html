@@ -32,7 +32,7 @@
       </a>
     </div>
     <div id="menu_base">
-      <a href="Stonehenge.html">
+      <a href="Japanesetemple.html">
         <img
           src="./images/Places/japanesetemple.png"
           class="Traveling Sydney"
@@ -46,31 +46,32 @@
       vr-mode-ui="enabled: false;"
       arjs="debugUIEnabled: false;"
     >
-    <a-assets>
-      <a-asset-item id="jag" src="models/japanesetemple/Japanese_Temple.obj"></a-asset-item>
-      </a-assets>
 
 <!-- IT19037066 -->
-      <a-marker
+     <a-marker
         id="marker"
         preset="custom"
         type="pattern"
         url="markers/pattern-japanesetemple.patt"
       >
        <a-entity
-          obj-model="obj: #jag; mtl: #jag_mtl" position="0 0 0" rotation="-90 0 0" scale="0.003 0.003 0.003"
+    gltf-model="url(./models/japanesetemple/Japn_Tem.gltf)" 
+          scale="0.090 0.090 0.090"
+          rotation="10 50 10"
+          rotation="10 50 10"
+
         >
           <a-animation
             attribute="rotation"
           
-            dur="10000"
-            to="360 360 360"
+            dur="3330"
+            to="0 180 0"
             repeat="indefinite"
-          >
+          > 
           </a-animation>
         </a-entity>
 
- <a-text value="\n \n \n \n \n \n \n \n W.A.D.S. De Silva \n JAPANESE TEMPLE\n IT19037066" height="3" width="3" align="center" rotation="-90 0 0" color="#EF2D5E" position= "0 -0.3 0"></a-text>
+ <a-text value="\n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n W.A.D.S. De Silva \n JAPANESE TEMPLE\n IT19037066" height="3" width="3" align="center" rotation="-90 0 0" color="#EF2D5E" position= "0 -0.3 0"></a-text>
     </a-marker>
 
       <a-entity camera></a-entity>
